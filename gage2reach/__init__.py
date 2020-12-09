@@ -37,3 +37,21 @@ def nhd_reach_id(usgs_gage_id):
         print('No data for streamgage', ke)
         raise
 
+def lookup_table():
+    """Return reach ID lookup table.
+
+    Returns
+    -------
+    dict
+    """
+    return(reach_lookup_table.copy())
+
+def reverse_lookup_table():
+    """Return gage ID lookup table.
+
+    Returns
+    -------
+    dict
+    """
+    reverse_lookup = dict((v,k) for k,v in reach_lookup_table.items())
+    return(reverse_lookup)
