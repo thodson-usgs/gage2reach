@@ -13,8 +13,8 @@ wget https://www.sciencebase.gov/catalog/file/get/577445bee4b07657d1a991b6?facet
 ```
 Then run the following:
 ```python
-import pickle, bz2, shape
-import shapefile
+import pickle, bz2, shapefile
+
 shape = shapefile.Reader("GageLoc/GageLoc.shp")
 
 shape.records()[0]
